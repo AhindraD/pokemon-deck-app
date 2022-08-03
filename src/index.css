@@ -5,5 +5,52 @@
 }
 
 body {
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(185, 255, 232);
+}
+
+.title {
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(0, 140, 117);
+  width: 100%;
+  text-align: center;
+}
+
+.list-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(185, 255, 232);
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 4px 4px 9px 2px rgb(0 0 0 / 24%);
+}
+
+.pokemon-image,
+.pokemon-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
