@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  background: url('./pokemonBG.jpg') no-repeat;
+  background: url('./pokemonBG.png') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 50px;
