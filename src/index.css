@@ -18,7 +18,7 @@ body {
   background: url('./pokemonBG.png') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .overlay {
@@ -39,6 +39,43 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.title img {
+  width: 580px;
+  height: 280px;
+}
+
+
+.toggle {
+  height: 25px;
+  width: 140px;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50vw - 80px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-no {
+  width: 90px;
+  height: 100%;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev,
+.next {
+  height: 25px;
+  width: 25px;
+}
+
+
 
 .list-cont {
   width: 100%;
@@ -98,8 +135,46 @@ body {
   transform: scale(1.2);
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:620px) {
   .title img {
     width: 80%;
+  }
+}
+
+
+
+
+/* LOADER */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid yellow;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 600ms linear infinite;
+  animation: spin 600ms linear infinite;
+  margin: 260px 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

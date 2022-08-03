@@ -37,7 +37,7 @@ export default function Card(props) {
     }, [])
     return (
         <>
-            {pokemon === null ? '' :
+            {pokemon === null ? <div className='loader'></div> :
                 <div className='card'>
                     <p className="pokemon-name">{pokemon.name}</p>
                     <div className="pokemon-image">
@@ -45,7 +45,7 @@ export default function Card(props) {
                     </div>
                     <div className="types-cont">
                         {pokemon.types.map((elemType) => {
-                            return <p key={elemType.type.name} style={{backgroundColor:colors[elemType.type.name]}} className="pokemon-type">{elemType.type.name}</p>
+                            return <p key={elemType.type.name} style={{ backgroundColor: colors[elemType.type.name] }} className="pokemon-type">{elemType.type.name}</p>
                         })}
                     </div>
                 </div>
