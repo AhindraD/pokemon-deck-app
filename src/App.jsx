@@ -10,12 +10,14 @@ function App() {
     if (pageNo > 1) {
       setPageNo((curr) => curr - 1);
       setOffset((curr) => curr - LIMIT);
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
   }
   function nextPage() {
     if (pageNo < 28) {
       setPageNo((curr) => curr + 1);
       setOffset((curr) => curr + LIMIT);
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
   }
 
